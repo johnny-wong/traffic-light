@@ -1,14 +1,14 @@
-#Traffic light reinforcement project
-Date: 27/5/17
-Author: Johnny Wong
-Software: Matlab R2016b
+# Traffic light reinforcement project  
+Date: 27/5/17  
+Author: Johnny Wong  
+Software: Matlab R2016b  
 
-##INTRODUCTION
+## INTRODUCTION
 These files contain code to learn a traffic light system under different scenarios
 The file 'Traffic_light.m' is the control centre for the project
 Other files are functions used throughout the simulations.
 
-##INSTRUCTIONS
+## INSTRUCTIONS
 1. Make sure all files are in the same folder
 2. Open 'Traffic_light.m'
 3. It is recommended you run each section one at a time
@@ -26,35 +26,35 @@ Other files are functions used throughout the simulations.
 	a. Set seconds_pause=0 in Section A
 	b. Comment out the animation subsection in Sections D and E; this will speed the simulations significantly
 
-##DETAILS ON OTHER FILES
-Reward.m
+## DETAILS ON OTHER FILES
+Reward.m  
 	Takes in the state matrix, returns a reward for being in that state
 
-pos_2_state.m
+pos_2_state.m  
 	Takes in a position matrix, returns the equivalent state
 
-next_position.m
+next_position.m  
 	Takes in a position matrix, the action taken and returns the resulting position matrix
 
-intersection_animation_setup.m
+intersection_animation_setup.m  
 	Takes in animation parameters and draws the intersection used in the animation
 
-initialise_1.m
+initialise_1.m  
 	Initialises some various matrices such as position and state based on scenario parameters
 
-find_position_between.m
+find_position_between.m  
 	Takes in two consecutive position matrices and creates a position matrix representing the
 	middle of the two. Used to smooth the animation when moving between time steps
 
-find_next_optimal.m
+find_next_optimal.m  
 	Takes in the current position matrix, a Q-matrix and returns the current state, the action taken,
 	the resulting position and state. The action can be either randomly chosen or based on the Q-matrix
 	depending on the optimal_toggle (1=based on Q, 0=random)
 
-find_car_positions.m
+find_car_positions.m  
 	Takes in a position matrix and find the points at which there are cars. Used for animation purposes
 
-animate_pos.m
+animate_pos.m  
 	Takes in the outputs from find_car_positions and puts them into the animation.
 	Animates the cars and traffic lights.
 
