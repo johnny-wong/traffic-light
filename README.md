@@ -4,7 +4,8 @@ Author: Johnny Wong
 Software: Matlab R2016b  
 
 ## INTRODUCTION
-These files contain code to learn a traffic light system under different scenarios
+Q-learning is an algorithm that maps certain system states to the best course of action.
+These files contain code to learn a traffic light system under different scenarios with the objective of maximising traffic flow and minimising stopped cars.
 The file 'Traffic_light.m' is the control centre for the project
 Other files are functions used throughout the simulations.
 
